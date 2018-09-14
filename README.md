@@ -7,7 +7,7 @@ vagrant ssh
 vagrant destroy
 ```
 
-###For the museum:
+### Obsolete. Preserved for posterity:
 
 - [x] "Use your own box from Vagrant Cloud"
 - [x] "Change hostname to 'bananas3'"
