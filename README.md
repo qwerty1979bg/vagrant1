@@ -1,5 +1,14 @@
 # A Vagrantfile for the first 4 vagrant tasks:
 
+Usage:
+```
+vagrant up
+vagrant ssh
+vagrant destroy
+```
+
+###For the museum:
+
 - [x] "Use your own box from Vagrant Cloud"
 - [x] "Change hostname to 'bananas3'"
 - [x] "Script to install nginx"
