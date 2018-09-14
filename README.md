@@ -8,9 +8,10 @@
 Usage:
 ```shell
 for name in (own_box, bananas3, nginx, ip) do
-vagrant up <name>
-vagrant ssh <name>
-*play around*
+  vagrant up <name>
+  vagrant ssh <name>
+  *play around*
 done
+
 vagrant destroy /./
 ```
