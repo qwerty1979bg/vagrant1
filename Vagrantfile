@@ -23,11 +23,18 @@ Vagrant.configure("2") do |config|
     ip.vm.post_up_message = "task: 'set ip to 192.168.56.56'"
   end
 
+  config.vm.define "fwd", autostart:false do |fwd|
+    fwd.vm.box = "qwerty1979/highfive"
+    fwd.vm.network "forwarded_port", guest: 80, host: 8080
+    fwd.vm.post_up_message = "task: set port_forward 8080 - 80"
+  end
+
   config.vm.define "all_in", primary: true do |all|
     all.vm.box = "qwerty1979/highfive"
     all.vm.hostname = "bananas3"
     all.vm.provision "shell", path: "provision_nginx.sh"
     all.vm.network "private_network", ip: "192.168.56.56"
+    all.vm.network "forwarded_port", guest: 80, host: 8080
     all.vm.post_up_message = "All done, enjoy !"
   end
 
