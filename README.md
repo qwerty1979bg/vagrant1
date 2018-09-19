@@ -1,4 +1,4 @@
-# A Vagrantfile for the first 4 vagrant tasks:
+# A Vagrantfile for the first 5 vagrant tasks:
 
 Usage:
 ```
@@ -13,6 +13,8 @@ vagrant destroy
 - [x] "Change hostname to 'bananas3'"
 - [x] "Script to install nginx"
 - [x] "Set ip to 192.168.56.56"
+- [x] "Set ip to 192.168.56.56"
+- [x] "set port_forward 8080 - 80"
 
 Usage:
 ```shell
